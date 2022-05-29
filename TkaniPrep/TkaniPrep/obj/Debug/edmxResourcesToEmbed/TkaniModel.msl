@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище TkaniBaseModelContainer" CdmEntityContainer="TkaniBaseEntities">
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="TkaniBaseModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Order_ID" ColumnName="Order_ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ID_Pickup" ColumnName="ID_Pickup" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pickups">
+      <EntityTypeMapping TypeName="TkaniBaseModel.Pickups">
+        <MappingFragment StoreEntitySet="Pickups">
+          <ScalarProperty Name="Pickup_ID" ColumnName="Pickup_ID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="TkaniBaseModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="TkaniBaseModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="TkaniBaseModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
